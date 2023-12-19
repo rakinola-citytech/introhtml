@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rakinola_midterm_homepage</title>
+    <style>
+        body{
+            background-color: none;
+            font-family: american typerwriter;
+            margin: 0;
+        }.topnav {
+            background-color: none;
+            overflow: hidden;
+            
+        }.topnav a {
+            border: 2px solid black;
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 14px;
+            width: 16.37%;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: american typerwriter;
+        }.topnav a:hover, a.active{
+            background-color: black;
+            color: white;
+        }.topnav .icon {
+            display: none;
+        } 
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+            float: center;
+            display: block;
+            text-align: center;
+            }
+        }    
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: american typewriter;}
+        p {
+            font-family: american typewriter;
+            text-align: center;
+            font-size: 25px;
+        }.responsive {
+          width: 100%;
+          height: auto;
+        }*{box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <img src="images/web_img_header.png" alt="Nature" class="responsive" height="200px">
+    <br>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/pg_about.html">About</a>
+      <a href="pages/pg_history.html">History</a>
+      <a href="pages/pg_league.html">Leagues</a>
+      <a href="pages/pg_players.html">Players</a>
+      <a href="pages/pg_fans.html">Fans</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <br>
+    <h1>  Favorite Sport Website </h1>
+    <p> Football is my favorite sport. What's yours?</p>
+    <br>
+    <img src="images/web_img_footer.jpeg" alt="image" class="responsive" height="600px">
+</body>
+</html>

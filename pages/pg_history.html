@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rakinola_midterm_history</title>
+    <style>
+        body{
+            background-color: none;
+            font-family: american typerwriter;
+            margin: 0;
+        }.topnav {
+            background-color: none;
+            overflow: hidden;
+            
+        }.topnav a {
+            border: 2px solid black;
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 14px;
+            width: 16.37%;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: american typerwriter;
+        }.topnav a:hover, a.active{
+        background-color: black;
+        color: white;
+        }.topnav a.icon {
+            display: none;
+        } 
+        @media screen and (max-width: 500px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            }
+        }    
+        h1 {
+        color: black;
+        text-align: center;
+        font-family: american typewriter;}
+        pre{
+            font-family: american typewriter;
+            text-align: left;
+            font-size: 2vw;
+        }.responsive {
+          width: 100%;
+          height: auto;
+        }
+        /* image formating below*/
+        *{box-sizing: border-box;}
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/web_img_header.png" alt="image" class="responsive" height="200px">
+    <br>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html">Home</a>
+      <a href="pg_about.html">About</a>
+      <a href="pg_history.html" class="active" >History</a>
+      <a href="pg_league.html">Leagues</a>
+      <a href="pg_players.html">Players</a>
+      <a href="pg_fans.html">Fans</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <br>
+    <h1>History</h1>
+    <pre>
+        According to wikipedia, football doesn't have a classical history but its origins date
+        back to eight century England. The formal rule of the games were established in the mid-19th
+        century. The gameplay standard of modern day football are called the Laws of the Game. They
+        were drafted by the Footall Association(FA), an organisation founded 1863
+        
+        As an omage to the organisation,the world's oldest football competition is the FA Cup.
+        However, FIFA is the international football body. It was formed in Paris in 1904 and it adheres
+        to the FA's Laws of the Game. To oversee international competition among its 211 member
+        association,FIFA is subdivided into six regional confederations into which the world is divided:
+        CAF (Africa), AFC (Asia and Australia), UEFA (Europe), CONCACAF (North & Central America
+        and the Caribbean), OFC (Oceania) and CONMEBOL (South America).
+
+    </pre>
+    <br>
+
+    <div class="row">
+        <div class="column">
+        <img src="../images/web_img_history1.jpeg" alt="image" style="width:100%">
+        </div>
+        <div class="column">
+        <img src="../images/web_img_history2.jpeg" alt="image" style="width:100%">
+        </div>
+        <div class="column">
+        <img src="../images/web_img_history3.jpeg" alt="image" style="width:100%">
+  </div>
+</body>
+</html>
